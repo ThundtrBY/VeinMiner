@@ -24,7 +24,7 @@ buildscript {
 plugins {
     id 'com.matthewprenger.cursegradle' version '1.0.7'
     id 'org.ajoberstar.grgit' version '1.3.2'
-    id 'forge'
+    id 'forge' version '10.13.4.1614'
 }
 
 apply plugin: 'maven'
