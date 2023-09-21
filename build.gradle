@@ -23,7 +23,6 @@ plugins {
 
 apply plugin: 'forge'
 apply plugin: 'maven'
-apply plugin: "org.ajoberstar.grgit"
 apply plugin: "com.matthewprenger.cursegradle"
 
 ext.git = grgit.open(file('.'))
