@@ -22,7 +22,7 @@ jobs:
           name: VeinMiner-1.7.10
           path: build/libs
       - name: Discord notification
-      - uses: fateyan/action-discord-notifier@v1.2.0
+        uses: fateyan/action-discord-notifier@v1.2.0
         with:
           message-title: New Commits Pushed
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
