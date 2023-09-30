@@ -25,3 +25,5 @@ jobs:
         uses: johnnyhuy/actions-discord-git-webhook@main 
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+          censor_username: false
+          hide_links: false
