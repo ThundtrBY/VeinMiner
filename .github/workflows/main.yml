@@ -22,8 +22,7 @@ jobs:
           name: VeinMiner-1.7.10
           path: build/libs
       - name: Discord notification
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        uses: Ilshidur/action-discord@master
+      - uses: fateyan/action-discord-notifier@v1.2.0
         with:
-          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.test:{{ EVENT_PAYLOAD.repository.commit_comment }}'
+          message-title: New Commits Pushed
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
