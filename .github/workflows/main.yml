@@ -22,7 +22,6 @@ jobs:
           name: VeinMiner-1.7.10
           path: build/libs
       - name: Discord notification
-        uses: fateyan/action-discord-notifier@v1.2.0
+        uses: johnnyhuy/actions-discord-git-webhook@main 
         with:
-          message-title: New Commits Pushed
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
