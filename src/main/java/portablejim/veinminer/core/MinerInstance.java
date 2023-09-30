@@ -283,7 +283,6 @@ public class MinerInstance {
             numBlocksMined++;
 
             if(!player.capabilities.isCreativeMode) {
-                takeHunger();
                 takeExperience();
             }
 
